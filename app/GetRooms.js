@@ -4,7 +4,7 @@ const path = require('path');
 
 async function GetRooms() {
     try {
-        const filePath = path.join(__dirname, '../searchQuere.json');
+        const filePath = path.join(__dirname, '../searchQuery.json');
         const jsonData = await fs.readFile(filePath, 'utf-8');
         const requestBody = JSON.parse(jsonData);
 
